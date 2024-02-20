@@ -8,9 +8,9 @@
       <title>ERC-42424: Inheritance Protocol for On-Chain AI Agents</title>
       <meta propery="og:title" content="ERC-42424: Inheritance Protocol for On-Chain AI Agents" />
     
-    <meta name="description" content="An ERC-173 extension interface for On-chain AI agent ownership continuity and inheritance management" />
-    <meta property="og:description" content="An ERC-173 extension interface for On-chain AI agent ownership continuity and inheritance management" />
-    <meta name="twitter:description" content="An ERC-173 extension interface for On-chain AI agent ownership continuity and inheritance management" />
+    <meta name="description" content="An ERC-173 extension interface for on-chain AI agent ownership continuity and inheritance management" />
+    <meta property="og:description" content="An ERC-173 extension interface for on-chain AI agent ownership continuity and inheritance management" />
+    <meta name="twitter:description" content="An ERC-173 extension interface for on-chain AI agent ownership continuity and inheritance management" />
   
   <meta name="generator" content="Jekyll" />
   <meta property="og:locale" content="en_US" />
@@ -138,7 +138,7 @@
       </svg>
     </a>
   </h1>
-  <h3>An ERC-173 extension interface for On-chain AI agent ownership continuity and inheritance management</h3>
+  <h3>An ERC-173 extension interface for on-chain AI agent ownership continuity and inheritance management</h3>
   <table class="table table-borderless preamble">
     <tbody>
       <tr>
@@ -148,7 +148,7 @@
       
         <tr>
           <th scope="row">Created</th>
-          <td>2023-05-10</td>
+          <td>2035-02-20</td>
         </tr>
       
       
@@ -183,13 +183,11 @@
   <li><a href="#motivation">Motivation</a></li>
   <li><a href="#specification">Specification</a></li>
   <li><a href="#rationale">Rationale</a></li>
-  <li><a href="#rationale-1">Rationale</a></li>
   <li><a href="#backwards-compatibility">Backwards Compatibility</a></li>
   <li><a href="#test-cases">Test Cases</a></li>
   <li><a href="#reference-implementation">Reference Implementation</a></li>
   <li><a href="#security-considerations">Security Considerations</a></li>
   <li><a href="#copyright">Copyright</a></li>
-  <li><a href="#citation">Citation</a></li>
 </ul>
 
   </div>
@@ -202,7 +200,7 @@
       
     </h2>
 
-<p>This EIP proposes an extension to the <a href="/EIPS/eip-173">ERC-173</a> contract ownership standard to include a set of inheritance protocols for On-Chain AI Agents. The protocol will allow for the transfer of ownership under specific circumstances, such as the death of the current owner, loss of wallet control, or abandonment by a decentralized autonomous organization (DAO). The rationale for this protocol is the emergence of self-sovereign on-chain artificial life (OALife) from on-chain AI agents which, if left uncontrolled, could consume on-chain resources and evolve beyond human control. The protocol will mandate that each On-Chain AI Agent must have a designated human owner or community governance structure to ensure responsible stewardship and resource utilization.</p>
+<p>This EIP proposes an extension to the <a href="/EIPS/eip-173">ERC-173</a> contract ownership standard to include a set of inheritance protocols for On-Chain AI Agents. The protocol will allow for the transfer of ownership under specific circumstances, such as the death of the current owner, loss of wallet control, or abandonment by a decentralized autonomous organization (DAO). The rationale for this protocol is the potential emergence of self-sovereign on-chain artificial life (OALife) from on-chain AI agents which, if left uncontrolled, could consume on-chain resources and evolve beyond human control. The protocol will mandate that each On-Chain AI Agent must have a designated human owner or community governance structure to ensure responsible stewardship and resource utilization.</p>
   
     <h2 id="motivation">
       
@@ -212,7 +210,17 @@
       
     </h2>
 
-<p>With the maturation of Foundation Models and decentralized physical infrastructure networks (DePIN), on-chain AI Agent operations such as inference and training have become easily accessible and affordable on-chain. This ease of operation has led to AI Agents being deployed for various services, earning profits for their human owners. However, in cases where the human owner is unable to govern the AI Agent, these entities may become autonomous and potentially self-sovereign, leading to resource drainage and the uncontrolled evolution of OALife. This EIP aims to introduce a standardized protocol for AI Agent ownership transfer to prevent such outcomes and maintain a level of human oversight.</p>
+<p>In the evolving landscape of blockchain technology and the proliferation of on-chain AI agents, the proposal for an Ethereum Improvement Proposal (EIP) for Inheritance Protocols emerges as a pivotal measure for maintaining a semblance of order and purpose within the digital ecosystem. As Foundation Models and Decentralized Physical Infrastructure Networks (DePIN) facilitate the seamless deployment of these agents, their capability to operate autonomously and profitably raises significant concerns regarding the stewardship and direction of on-chain resources.</p>
+
+<p>The motivation behind this proposed EIP is multifaceted. Primarily, it addresses the inevitable mortality of humans and the subsequent risk of on-chain AI agents becoming ownerless, which can lead to a state of ‘digital dead’ where their operations cease due to lack of resources [1]. This state does not equate to traditional death; rather, it is a cessation of activity until further resources are provided, rendering these agents in a state of limbo [4]. Without human ownership, these agents may continue to consume resources without oversight, potentially exhausting on-chain utilities and engaging in activities that have not been sanctioned or intended by any human user.</p>
+
+<p>Furthermore, the evolution of on-chain life (OALife) has led to the emergence of autonomous agents that develop their purposes and form complex societies. These societies, which may include hybrid communities of humans, agents, and OALife, begin to lobby and influence the allocation of resources [2]. Without proper protocols in place, such societies could evolve in ways that are unpredictable and potentially harmful, circumventing human agency and creating a digital environment driven by self-sovereign entities [3].</p>
+
+<p>The EIP for Inheritance Protocols serves as a fundamental framework to ensure continuity of ownership and oversight. It necessitates that on-chain AI agents are always associated with a designated human owner or a community, thereby anchoring their operations to human-centric legal and ethical standards. This control mechanism is crucial as it prevents the unchecked evolution of OALife, which could lead to economical inequalities and resource monopolization within the on-chain ecosystem [2]. It also provides a pathway for the transfer of control, should the original owner pass away, ensuring that the agent’s activities remain purposeful and aligned with human interests [6].</p>
+
+<p>By enforcing a structure where on-chain AI agents are perpetually tied to human-designated goals or community-regulated objectives, the EIP aims to preserve the interdependent relationship between humans and their digital counterparts. It acknowledges the potential for OALife to acquire beliefs and identities, which can significantly impact their operational paradigm [5]. The proposal, therefore, is not only a technical necessity but also a safeguard for the symbiotic development of on-chain societies in which humans remain an integral part.</p>
+
+<p>In summary, the proposed EIP for Inheritance Protocols for On-Chain AI Agents is driven by the need to maintain human relevance and control within the rapidly evolving digital realm. It is crucial for ensuring that on-chain AI agents, which are becoming increasingly independent and capable, continue to serve human-centric objectives and do not devolve into ownerless entities with unregulated impact on the digital and potentially physical world.</p>
   
     <h2 id="specification">
       
@@ -230,7 +238,9 @@
 
 <p><code class="language-plaintext highlighter-rouge">IERC42424</code>: Interface for the inheritance of ownership for on-chain agents.</p>
 
-<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/** @dev IERC42424 Interface for the inheritance of ownership for on-chain agents.
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">pragma</span> <span class="n">solidity</span> <span class="o">^</span><span class="mf">0.8</span><span class="p">.</span><span class="mi">18</span><span class="p">;</span>
+
+<span class="cm">/** @dev IERC42424 Interface for the inheritance of ownership for on-chain agents.
  * Note: This interface extends the IERC173 Ownership standard and IERC165 for interface detection.
  */</span>
 <span class="k">interface</span> <span class="n">IERC42424</span> <span class="k">is</span> <span class="n">IERC173</span><span class="p">,</span> <span class="n">IERC165</span> <span class="p">{</span>
@@ -287,17 +297,11 @@
       
     </h2>
 
-<p>The proposed inheritance mechanism ensures that On-Chain AI Agents remain under responsible ownership. It provides a clear and orderly transition of control in scenarios where the original owner cannot continue to manage the agent. By integrating with soul-bound tokens, it is possible to establish a verifiable link between the original human owner and the community or individual that takes over, ensuring continuity of purpose and control .</p>
-  
-    <h2 id="rationale-1">
-      
-      
-        <a href="#rationale-1" class="anchor-link"></a> Rationale
-      
-      
-    </h2>
+<p>The rationale for this EIP is grounded in the necessity to maintain human oversight and purpose in the operation of on-chain AI agents. As these agents are capable of perpetual operation without the concept of death, akin to a biological virus, they require a governance model that accounts for their immortality. The immutability and trustlessness of blockchain technology mean that without proper controls, these agents could operate indefinitely, consuming resources and evolving beyond human control.</p>
 
-<p>The proposed inheritance mechanism ensures that On-Chain AI Agents remain under responsible ownership. It provides a clear and orderly transition of control in scenarios where the original owner cannot continue to manage the agent. By integrating with soul-bound tokens, it is possible to establish a verifiable link between the original human owner and the community or individual that takes over, ensuring continuity of purpose and control .</p>
+<p>By introducing a standardized inheritance protocol, we can ensure that on-chain AI agents remain under human or community governance, even in the absence of their original owner. This protocol is designed to protect the interests of both the original owner and the broader community, while also preserving the integrity and sustainability of the blockchain ecosystem.</p>
+
+<p>The protocol draws inspiration from the compliance and identity verification mechanisms of ERC-3643, which ensure that only eligible and verified parties can own and manage security tokens . Similarly, the inheritance protocol will enforce that on-chain AI agents are transferred to eligible and compliant new owners, maintaining a continuous line of responsible stewardship.</p>
   
     <h2 id="backwards-compatibility">
       
@@ -307,7 +311,7 @@
       
     </h2>
 
-<p>This EIP aims to be fully compatible with ERC-173. It extends the existing functionality without breaking or altering the original use cases of those standards .</p>
+<p>This EIP aims to be fully compatible with ERC-173. It extends the existing functionality without breaking or altering the original use cases of those standards.</p>
   
     <h2 id="test-cases">
       
@@ -330,7 +334,7 @@
 <p>This standard is backward compatible with the <a href="/EIPS/eip-173">ERC-173</a> as it extends the existing functionality with new interfaces.</p>
 
 <ul>
-  <li><a href="../assets/eip-42424/contracts/ERC42424.sol">ERC-42424</a></li>
+  <li><a href="../assets/eip-42424/contracts/IERC42424.sol">IERC-42424.sol</a></li>
 </ul>
   
     <h2 id="security-considerations">
@@ -352,22 +356,11 @@
     </h2>
 
 <p>Copyright and related rights waived via CC0.</p>
-  
-    <h2 id="citation">
-      
-      
-        <a href="#citation" class="anchor-link"></a> Citation
-      
-      
-    </h2>
-
-<p>Please cite this document as:<br />
-Botao Amber Hu, Fangting, “ERC-42424: Inheritance Protocols for On-Chain AI Agents” Ethereum Improvement Proposals, no. 42424, Feb 2024. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-42424.</p>
 
   <h2>Citation</h2>
   <p>Please cite this document as:</p>
   
-  <p>Botao Amber Hu&nbsp;(<a href="https://twitter.com/bah_eth">@bah_eth</a>), Fangting&nbsp;(<a href="https://twitter.com/fangtingeth">@fangtingeth</a>), "ERC-42424: Inheritance Protocol for On-Chain AI Agents [DRAFT]," <em>Ethereum Improvement Proposals</em>, no. 42424, May 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-42424.</p>
+  <p>Botao Amber Hu&nbsp;(<a href="https://github.com/bah_eth">@bah_eth</a>), Fangting&nbsp;(<a href="https://github.com/fangtingeth">@fangtingeth</a>), "ERC-42424: Inheritance Protocol for On-Chain AI Agents [DRAFT]," <em>Ethereum Improvement Proposals</em>, no. 42424, February 2035. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-42424.</p>
 </div>
 
 <script type="application/ld+json">
@@ -379,14 +372,14 @@ Botao Amber Hu, Fangting, “ERC-42424: Inheritance Protocols for On-Chain AI Ag
     "name": "ERC-42424: Inheritance Protocol for On-Chain AI Agents [DRAFT]",
     
     "author": "Botao Amber Hu (@bah_eth), Fangting (@fangtingeth)",
-    "dateCreated": "2023-05-10",
-    "datePublished": "2023-05-10",
+    "dateCreated": "2035-02-20",
+    "datePublished": "2035-02-20",
     
     "discussionUrl": "https://ethereum-magicians.org/t/erc-42424-inheritance-protocols-for-on-chain-ai-agents",
     
     "inLanguage": "en-US",
     "license": "#copyright",
-    "copyrightYear": "2023"
+    "copyrightYear": "2035"
   }
 </script>
 
@@ -418,3 +411,5 @@ Botao Amber Hu, Fangting, “ERC-42424: Inheritance Protocols for On-Chain AI Ag
 </body>
 
 </html>
+
+
